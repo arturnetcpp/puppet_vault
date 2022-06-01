@@ -1,0 +1,12 @@
+---
+vault::bin_dir: /usr/bin
+vault::config_dir: /etc/vault
+vault::install_method: archive
+vault::service_name: vault
+vault::service_enable: enable
+vault::service_ensure: running
+vault::download_dir: /tmp
+vault::download_filename: vaultnewer.zip
+vault::version: 1.7.3
+vault::default_lease_ttl: 720h
+vault::systemd::unit_file: puppet:///modules/profile/vault.service

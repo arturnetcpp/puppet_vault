@@ -1,0 +1,19 @@
+---
+version: 5
+
+defaults:
+  datadir: hieradata
+  data_hash: yaml_data
+hierarchy:
+  - name: "For vault"
+    path: "nodes/arturvaultnode.yaml"
+  - name: "Per nodes defaults"
+    path: "nodes/arturpuppetnode.yaml"
+  - name: "For docker"
+    path: "nodes/arturdockernode.yaml"
+  - name: "Per-O defaults"
+    path: "os/RedHat.yaml"
+  - name: "K8s defaults"
+    path: "os/Centos.yaml"
+  - name: "Common data"
+    path: "common.yaml"

@@ -1,0 +1,8 @@
+---
+cachedir: '/var/cache/r10k'
+
+sources:
+  sis:
+    basedir: '/etc/puppetlabs/code/environments'
+    ignore_branch_prefixes:
+    #  - 'main'
